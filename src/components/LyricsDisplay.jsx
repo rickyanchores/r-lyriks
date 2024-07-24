@@ -1,11 +1,13 @@
-import React from 'react'
+// src/components/LyricsDisplay.js
+import React from 'react';
 
-const LyricsDisplay = () => {
+
+const LyricsDisplay = ({ lyrics }) => {
   return (
-    <div className='LyricsDisplay bg-slate-700 p-4'>
-        <h1>LyricsDisplay</h1>
+    <div className="LyricsDisplay bg-gray-400 p-4">
+      {lyrics ? <pre>{lyrics}</pre> : <p>No lyrics found.</p>}
     </div>
-  )
-}
+  );
+};
 
-export default LyricsDisplay
+export default LyricsDisplay;
