@@ -16,7 +16,8 @@ const SearchBar = ({ onSearch }) => {
   };
 
   return (
-    <div className="SearchBar p-4">
+    <div className="SearchBar p-4 grid justify-center">
+      <div className="container p-4 justify-center">
       <h1>Search Lyrics</h1>
       <input
         type="text"
@@ -27,6 +28,7 @@ const SearchBar = ({ onSearch }) => {
         className="p-2 border border-gray-300 rounded"
       />
       <button className="btn ml-4 border-2 p-2" onClick={handleSearch}>Search</button>
+      </div>
     </div>
   );
 };
